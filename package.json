@@ -1,7 +1,6 @@
 {
   "name": "vite-plugin-check-scoped",
   "version": "0.0.1",
-  "private": true,
   "packageManager": "pnpm@8.6.12",
   "description": "A vite plugin for check style scoped",
   "author": "liuseen-l",
@@ -49,8 +48,7 @@
     "vite": "^3.1.0 || ^4.0.0-0"
   },
   "dependencies": {
-    "minimatch": "^9.0.3",
-    "vite-plugin-check-scoped": "workspace:^"
+    "minimatch": "^9.0.3"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.40.2",

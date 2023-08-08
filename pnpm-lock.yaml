@@ -7,16 +7,10 @@ importers:
       minimatch:
         specifier: ^9.0.3
         version: 9.0.3
-      vite-plugin-check-scoped:
-        specifier: workspace:^
-        version: 'link:'
     devDependencies:
       '@antfu/eslint-config':
         specifier: ^0.40.2
         version: 0.40.2(eslint@8.46.0)(typescript@5.1.6)
-      '@antfu/ni':
-        specifier: ^0.21.5
-        version: 0.21.5
       '@rollup/plugin-typescript':
         specifier: ^11.1.2
         version: 11.1.2(rollup@3.27.2)(typescript@5.1.6)
@@ -59,6 +53,9 @@ importers:
 
   playground:
     dependencies:
+      vite-plugin-check-scoped:
+        specifier: 0.0.1
+        version: link:..
       vue:
         specifier: ^3.3.4
         version: 3.3.4
@@ -177,11 +174,6 @@ packages:
       - jest
       - supports-color
       - typescript
-    dev: true
-
-  /@antfu/ni@0.21.5:
-    resolution: {integrity: sha512-rFmuqZMFa1OTRbxdu3vmfytsy1CtsIUFH0bO85rZ1xdu2uLoioSaEi6iOULDVTQUrnes50jMs+UW355Ndj7Oxg==}
-    hasBin: true
     dev: true
 
   /@babel/code-frame@7.22.10:
