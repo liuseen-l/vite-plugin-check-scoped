@@ -37,10 +37,11 @@
     "node": ">=v14.21.3"
   },
   "scripts": {
-    "dev": "pnpm --filter playground dev",
+    "dev": "nr build && nr -C playground dev",
     "cleanup": "rimraf dist",
-    "build": "rollup -c rollup.config.ts --configPlugin typescript --watch",
+    "build": "rollup -c rollup.config.ts --configPlugin typescript",
     "test": "vitest",
+    "prepublishOnly": "nr build",
     "prepare": "husky install",
     "release": "bumpp -r"
   },
@@ -53,7 +54,6 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.40.2",
-    "@antfu/ni": "^0.21.5",
     "@rollup/plugin-typescript": "^11.1.2",
     "@types/node": "^20.4.8",
     "@vue/compiler-sfc": "^3.3.4",
