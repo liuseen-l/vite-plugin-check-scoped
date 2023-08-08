@@ -1,0 +1,27 @@
+{
+  "name": "vite-plugin-check-scoped",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "pnpm --filter playground dev",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "vite-plugin-check-scoped": "workspace:^"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.40.2",
+    "@types/node": "^20.4.8",
+    "@vue/compiler-sfc": "^3.3.4",
+    "eslint": "^8.46.0",
+    "rimraf": "^5.0.1",
+    "rollup": "^3.27.2",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.5",
+    "vitest": "^0.34.1"
+  }
+}
