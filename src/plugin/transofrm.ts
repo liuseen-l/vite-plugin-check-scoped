@@ -18,8 +18,6 @@ export function resolveTransform(options?: CheckScopedOptions) {
 
     const { descriptor: { styles } } = parse(code)
     for (const style of styles) {
-      console.log(style)
-
       if (!Boolean(style.attrs.scoped))
         throw new Error(`${id} style is not marked with scoped`)
     }
