@@ -1,12 +1,17 @@
 {
   "name": "vite-plugin-check-scoped",
   "version": "0.0.1",
+  "private": true,
+  "packageManager": "pnpm@8.6.12",
   "description": "A vite plugin for check style scoped",
   "author": "liuseen-l",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/webfansplz/vite-plugin-vue-devtools.git"
+    "url": "git+https://github.com/liuseen-l/vite-plugin-check-scoped"
+  },
+  "bugs": {
+    "url": "https://github.com/liuseen-l/vite-plugin-check-scoped/issues"
   },
   "keywords": [
     "vite",
