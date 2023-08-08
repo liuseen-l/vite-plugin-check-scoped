@@ -1,10 +1,11 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import CheckScoped from '../src/index'
+import { CheckScopedPlugin } from 'vite-plugin-check-scoped'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue(), CheckScoped({
-    exclude: ['*.vue'],
+  plugins: [vue(), CheckScopedPlugin({
+    include: ['**/*.vue'],
+    exclude: ['./src/components/HelloWorld.vue'],
   })],
 })
