@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-check-scoped",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "packageManager": "pnpm@8.6.12",
   "description": "A vite plugin for check style scoped",
@@ -41,7 +41,7 @@
     "cleanup": "rimraf dist",
     "build": "rollup -c rollup.config.ts --configPlugin typescript",
     "test": "vitest",
-    "prepublishOnly": "nr build",
+    "prepublishOnly": "nr cleanup && nr build",
     "prepare": "husky install",
     "release": "bumpp -r"
   },
