@@ -1,6 +1,6 @@
 import { parse } from '@vue/compiler-sfc'
-import { handleCheckPath, wrapNormalizePath } from '../utils'
-import type { CheckScopedOptions } from '../types'
+import { handleCheckPath, wrapNormalizePath } from './utils'
+import type { CheckScopedOptions } from './types'
 
 export function resolveTransform(options?: CheckScopedOptions) {
   const include = wrapNormalizePath(options?.include || [])

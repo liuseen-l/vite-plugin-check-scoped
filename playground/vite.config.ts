@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import { CheckScopedPlugin } from 'vite-plugin-check-scoped'
+import CheckScopedPlugin from 'vite-plugin-check-scoped'
 
 // https://vitejs.dev/config/
 export default defineConfig({
